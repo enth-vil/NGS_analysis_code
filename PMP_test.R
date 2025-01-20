@@ -4,9 +4,6 @@ library(caret)
 
 test <- read.csv("~/Downloads/PupilBioTest_PMP_revA.csv", stringsAsFactors=TRUE)
 
-##Two separate data frames were created by filtering the Tissue because of huge size. 
-
-
 ## weights were assigned to each combination to calculate weighted score for each PMP
 
 weights <- c("X.000" = 0, "X.001" = 1/3, "X.010" = 1/3, "X.011" = 2/3, 
